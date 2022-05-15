@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+	<h1><%= title %></h1>
+	<form action="/add" method="post">
+		A: <input type="number" name="a" id="a" value="<%= a %>">
+		<br> x <br>
+		B: <input type="number" name="b" id="b" value="<%= b %>"> <button type="submit">Submit</button>
+		<br><br>
+		=: <%= parseInt(a) * parseInt(b) %>
+	</form>
+</body>
+
+</html>
